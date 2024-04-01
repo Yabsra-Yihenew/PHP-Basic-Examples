@@ -1,2 +1,2 @@
 # PHP-Basic-Exercises
-Common php programing language codes
+Common php programing language code exercises
