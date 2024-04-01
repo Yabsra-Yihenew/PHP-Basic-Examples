@@ -8,10 +8,8 @@
             height:500px;
         }
     </style>
-    <!-- Meta tags for defining character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title of the HTML document -->
     <title>Document</title>
 </head>
 <body>
