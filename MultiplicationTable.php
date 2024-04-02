@@ -18,7 +18,7 @@
             width: 100%;
             max-width: 800px; /* Limiting maximum width for better readability on larger screens */
             margin: auto; /* Center the table */
-            background-color: #fff; /* White background for the table */
+            background-color: #e6f7ff; /* Light blue background for the table */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
         }
 
@@ -29,16 +29,16 @@
         }
 
         th {
-            background-color: #f2f2f2; /* Light gray background for table headers */
+            background-color: #bbdefb; /* Light blue background for table headers */
             font-weight: bold; /* Bold font for table headers */
         }
 
         tr:nth-child(even) {
-            background-color: #f9f9f9; /* Alternate row colors for better readability */
+            background-color: #e6f7ff; /* Alternate row colors for better readability */
         }
 
         tr:hover {
-            background-color: #f2f2f2; /* Highlight rows on hover for better user interaction */
+            background-color: #bbdefb; /* Highlight rows on hover for better user interaction */
         }
     </style>
 </head>
