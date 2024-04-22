@@ -2,6 +2,8 @@
 <html>
 <body>
 
+<p>This PHP script calculates the square root of a number entered by the user:</p>
+
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
   Enter a number: <input type="text" name="number">
   <input type="submit">
