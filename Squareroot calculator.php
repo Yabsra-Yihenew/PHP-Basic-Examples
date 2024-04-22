@@ -2,11 +2,21 @@
 <html>
 <body>
 
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+  Enter a number: <input type="text" name="number">
+  <input type="submit">
+</form>
+
 <?php
-echo(sqrt(62) . "<br>");
-echo(sqrt(0) . "<br>");
-echo(sqrt(1) . "<br>");
-echo(sqrt(9));
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $number = $_POST['number'];
+
+    if (is_numeric($number)) {
+        echo "Square root of $number is: " . sqrt($number);
+    } else {
+        echo "Please enter a valid number!";
+    }
+}
 ?>
 
 </body>
