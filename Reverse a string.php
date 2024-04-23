@@ -28,14 +28,14 @@
     input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #2ecc71; /* Change button color */
+      background-color: #2ecc71; /* Green button color */
       color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
     }
     input[type="submit"]:hover {
-      background-color: #27ae60; /* Darker color on hover */
+      background-color: #27ae60; /* Darker button color on hover */
     }
     .result {
       margin-top: 20px;
@@ -58,7 +58,7 @@
   </form>
 
   <?php
-  // PHP Code
+  // PHP Code: Check if form is submitted
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       // Retrieve and process form data
       $sentence = $_POST['sentence'];
