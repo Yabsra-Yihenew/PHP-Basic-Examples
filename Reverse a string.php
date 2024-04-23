@@ -2,6 +2,7 @@
 <html>
 <head>
   <style>
+    /* CSS Styles */
     body {
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
@@ -27,14 +28,14 @@
     input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #007bff;
+      background-color: #2ecc71; /* Change button color */
       color: #fff;
       border: none;
       border-radius: 4px;
       cursor: pointer;
     }
     input[type="submit"]:hover {
-      background-color: #0056b3;
+      background-color: #27ae60; /* Darker color on hover */
     }
     .result {
       margin-top: 20px;
@@ -48,14 +49,20 @@
 <body>
 
 <div class="container">
+  <!-- HTML Form -->
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <!-- Text Input -->
     <input type="text" name="sentence" placeholder="Enter a sentence">
+    <!-- Submit Button -->
     <input type="submit" value="Submit">
   </form>
 
   <?php
+  // PHP Code
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      // Retrieve and process form data
       $sentence = $_POST['sentence'];
+      // Display result
       echo "<div class='result'>Reversed Sentence: " . strrev($sentence) . "</div>";
   }
   ?> 
