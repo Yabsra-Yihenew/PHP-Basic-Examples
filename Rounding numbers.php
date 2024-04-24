@@ -57,12 +57,8 @@
     </form>
 
     <?php
-    // Check if the form is submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the number from the form
         $number = $_POST['number'];
-
-        // Perform rounding and display the results
         echo "<p>Rounded number: " . round($number) . "</p>";
     }
     ?>
