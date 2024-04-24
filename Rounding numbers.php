@@ -3,6 +3,7 @@
 <head>
     <title>Rounding Numbers</title>
     <style>
+        /* CSS styles for the page layout and elements */
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
@@ -47,9 +48,12 @@
 <body>
 
 <div class="container">
+    <!-- Heading -->
     <h1>Round a Number</h1>
+    <!-- Description -->
     <p>Enter a number below and click "Round" to round it.</p>
 
+    <!-- Form for entering the number -->
     <form method="post">
         <input type="text" name="number" placeholder="Enter the number" required>
         <br>
@@ -57,8 +61,11 @@
     </form>
 
     <?php
+    // PHP code to handle form submission
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the number from the form
         $number = $_POST['number'];
+        // Round the number and display the result
         echo "<p>Rounded number: " . round($number) . "</p>";
     }
     ?>
