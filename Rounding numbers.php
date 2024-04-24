@@ -47,6 +47,7 @@
 <body>
 
 <div class="container">
+    <h1>Round a Number</h1>
     <p>Enter a number below and click "Round" to round it.</p>
 
     <form method="post">
